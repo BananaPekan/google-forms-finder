@@ -3,6 +3,7 @@ import threading
 import requests
 import string
 import random
+import time
 import sys
 
 # Made with ♥ by GamerStop#0069
@@ -27,7 +28,7 @@ init(convert=True)
 threads = 0
 
 def check():
-    global threads
+    global threads, printfix, alreadyFound
     genform = ''.join(random.choices(string.ascii_uppercase + string.digits + string.ascii_lowercase , k = N))
     formlink = "https://forms.gle/" + str(genform)
     if formlink in alreadyFound:
@@ -75,6 +76,7 @@ loopsLeft = loops
 
 def printResults():
     global printfix, loopsLeft
+    time.sleep(1)
     while True:
         if loopsLeft <= 0:
             break
