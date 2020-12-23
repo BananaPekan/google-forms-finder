@@ -5,7 +5,6 @@ A python program to find Google Forms forms - Made with ♥ by GamerStop#0069 .
 
 + pip install requests
 + pip install colorama
-+ pip install threading
 
 # Todo:
 
